@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class SaqueServiceTest {
+p ublic class SaqueServiceTest {
 
     private SaqueService service;
 
@@ -36,13 +36,13 @@ public class SaqueServiceTest {
     }
 
     @Test
-    void valor_2000_deveSerAceito() {
-        assertTrue(service.podeSacar(2000));
+    void valor_3000_deveSerAceito() {
+        assertTrue(service.podeSacar(3000));
     }
 
     @Test
-    void valor_2010_deveSerRejeitado() {
-        assertFalse(service.podeSacar(2010));
+    void valor_3010_deveSerRejeitado() {
+        assertFalse(service.podeSacar(3010));
     }
 
 
